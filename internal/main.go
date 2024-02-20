@@ -6,10 +6,10 @@ import (
 
 	"github.com/go-openapi/loads"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/scraly/gophers-api/pkg/swagger/server/models"
-	"github.com/scraly/gophers-api/pkg/swagger/server/restapi"
+	"github.com/ibiscum/gophers-api/pkg/swagger/server/models"
+	"github.com/ibiscum/gophers-api/pkg/swagger/server/restapi"
 
-	"github.com/scraly/gophers-api/pkg/swagger/server/restapi/operations"
+	"github.com/ibiscum/gophers-api/pkg/swagger/server/restapi/operations"
 )
 
 func main() {
@@ -62,7 +62,7 @@ var gophers = allGophers{
 	{
 		Name:        "5th-element",
 		Displayname: "5th Element",
-		URL:         "https://raw.githubusercontent.com/scraly/gophers/main/5th-element.png",
+		URL:         "https://raw.githubusercontent.com/ibiscum/gophers/main/5th-element.png",
 	},
 }
 
@@ -204,10 +204,10 @@ func UpdateGopher(gopherParam operations.PutGopherParams) middleware.Responder {
 	return operations.NewPutGopherOK()
 }
 
-//TODO: Create Helper function in order to create a JSON with full existing Gophers in github.com/scraly/gophers
+//TODO: Create Helper function in order to create a JSON with full existing Gophers in github.com/ibiscum/gophers
 // /*
 // *
-// Get Gophers List from Scraly repository
+// Get Gophers List from ibiscum repository
 // */
 // func GetGophersList() []*models.Gopher {
 
@@ -216,7 +216,7 @@ func UpdateGopher(gopherParam operations.PutGopherParams) middleware.Responder {
 // 	// list public repositories for org "github"
 // 	ctx := context.Background()
 // 	// list all repositories for the authenticated user
-// 	_, directoryContent, _, err := client.Repositories.GetContents(ctx, "scraly", "gophers", "/", nil)
+// 	_, directoryContent, _, err := client.Repositories.GetContents(ctx, "ibiscum", "gophers", "/", nil)
 // 	if err != nil {
 // 		fmt.Println(err)
 // 	}

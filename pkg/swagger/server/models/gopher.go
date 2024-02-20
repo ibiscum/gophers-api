@@ -26,7 +26,7 @@ type Gopher struct {
 	Name string `json:"name,omitempty"`
 
 	// url
-	// Example: https://raw.githubusercontent.com/scraly/gophers/main/arrow-gopher.png
+	// Example: https://raw.githubusercontent.com/ibiscum/gophers/main/arrow-gopher.png
 	URL string `json:"url,omitempty"`
 }
 

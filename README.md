@@ -8,20 +8,20 @@ It alllows to:
 - delete a Gopher
 - update the path and the URL of a Gopher
 
-<img src="https://raw.githubusercontent.com/scraly/gophers/main/yoda-gopher.png" alt="yoda-gopher.png" width="300"/> <img src="https://raw.githubusercontent.com/scraly/gophers/main/back-to-the-future-v2.png" alt="back-to-the-future-v2.png" width="300"/>
+<img src="https://raw.githubusercontent.com/ibiscum/gophers/main/yoda-gopher.png" alt="yoda-gopher.png" width="300"/> <img src="https://raw.githubusercontent.com/ibiscum/gophers/main/back-to-the-future-v2.png" alt="back-to-the-future-v2.png" width="300"/>
 
 ## Gitpod integration
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/scraly/gophers-api.git)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ibiscum/gophers-api.git)
 
 ## Docker image
 
-Gophers API is available in [Docker Hub](https://hub.docker.com/r/scraly/gophers-api).
+Gophers API is available in [Docker Hub](https://hub.docker.com/r/ibiscum/gophers-api).
 
 ### Run the Gophers API with Docker
 
 ```bash
-docker run -p 8080:8080 scraly/gophers-api:linux-amd64
+docker run -p 8080:8080 ibiscum/gophers-api:linux-amd64
 ```
 
 ## How to install 
@@ -82,7 +82,7 @@ curl localhost:8080/gophers
 Response:
 
 ```bash
-[{"displayname":"5th Element","name":"5th-element","url":"https://raw.githubusercontent.com/scraly/gophers/main/5th-element.png"}]
+[{"displayname":"5th Element","name":"5th-element","url":"https://raw.githubusercontent.com/ibiscum/gophers/main/5th-element.png"}]
 ```
 
 * Get a Gopher with the input name
@@ -94,7 +94,7 @@ curl "localhost:8080/gopher?name=5th-element"
 Response:
 
 ```bash
-{"displayname":"5th Element","name":"5th-element","url":"https://raw.githubusercontent.com/scraly/gophers/main/5th-element.png"}
+{"displayname":"5th Element","name":"5th-element","url":"https://raw.githubusercontent.com/ibiscum/gophers/main/5th-element.png"}
 ```
 
 /!\ Returns a 404 HTTP Error Code if a Gopher have not been found for the given name.
@@ -104,13 +104,13 @@ Response:
 ```
 curl -X POST localhost:8080/gopher \
    -H "Content-Type: application/json" \
-   -d '{"name":"yoda-gopher","displayname":"Yoda Gopher","url":"https://raw.githubusercontent.com/scraly/gophers/main/yoda-gopher.png"}'  
+   -d '{"name":"yoda-gopher","displayname":"Yoda Gopher","url":"https://raw.githubusercontent.com/ibiscum/gophers/main/yoda-gopher.png"}'  
 ```
 
 Response:
 
 ```bash
-{"displayname":"Yoda Gopher.png","name":"yoda-gopher","url":"https://raw.githubusercontent.com/scraly/gophers/main/yoda-gopher.png"}
+{"displayname":"Yoda Gopher.png","name":"yoda-gopher","url":"https://raw.githubusercontent.com/ibiscum/gophers/main/yoda-gopher.png"}
 ```
 
 Add another Gopher:
@@ -118,7 +118,7 @@ Add another Gopher:
 ```
 curl -X POST localhost:8080/gopher \
    -H "Content-Type: application/json" \
-   -d '{"name":"jurassic-park","displayname":"Gopher Park","url":"https://raw.githubusercontent.com/scraly/gophers/main/jurassic-park.png"}'  
+   -d '{"name":"jurassic-park","displayname":"Gopher Park","url":"https://raw.githubusercontent.com/ibiscum/gophers/main/jurassic-park.png"}'  
 ```
 
 * Delete a Gopher
@@ -132,13 +132,13 @@ curl -X DELETE "localhost:8080/gopher?name=5th-element"
 ```bash
 curl -X PUT localhost:8080/gopher \
    -H "Content-Type: application/json" \
-   -d '{"name":"yoda-gopher","displayname":"El mejor Yoda Gopher","url":"https://raw.githubusercontent.com/scraly/gophers/main/yoda-gopher.png"}' 
+   -d '{"name":"yoda-gopher","displayname":"El mejor Yoda Gopher","url":"https://raw.githubusercontent.com/ibiscum/gophers/main/yoda-gopher.png"}' 
 ```
 
 Response:
 
 ```bash
-{"displayname":"El mejor Yoda Gopher","name":"yoda-gopher","url":"https://raw.githubusercontent.com/scraly/gophers/main/yoda-gopher.png"}
+{"displayname":"El mejor Yoda Gopher","name":"yoda-gopher","url":"https://raw.githubusercontent.com/ibiscum/gophers/main/yoda-gopher.png"}
 ```
 
 ## Build docker image
@@ -152,7 +152,7 @@ DOCKER_BUILDKIT=1 docker build -t gophers-api .
 * Build for GitPod (linux/amd64) and push to the Docker Hub:
 
 ```
-docker buildx build --platform linux/amd64 -t scraly/gophers-api:linux-amd64 . --push
+docker buildx build --platform linux/amd64 -t ibiscum/gophers-api:linux-amd64 . --push
 ```
 
 ## GoReleaser

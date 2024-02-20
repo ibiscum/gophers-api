@@ -1,4 +1,4 @@
-module github.com/scraly/gophers-api
+module github.com/ibiscum/gophers-api
 
 go 1.18
 

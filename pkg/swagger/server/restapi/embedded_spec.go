@@ -241,7 +241,7 @@ func init() {
         },
         "url": {
           "type": "string",
-          "example": "https://raw.githubusercontent.com/scraly/gophers/main/arrow-gopher.png"
+          "example": "https://raw.githubusercontent.com/ibiscum/gophers/main/arrow-gopher.png"
         }
       }
     }
@@ -471,7 +471,7 @@ func init() {
         },
         "url": {
           "type": "string",
-          "example": "https://raw.githubusercontent.com/scraly/gophers/main/arrow-gopher.png"
+          "example": "https://raw.githubusercontent.com/ibiscum/gophers/main/arrow-gopher.png"
         }
       }
     }

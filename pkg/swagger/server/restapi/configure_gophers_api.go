@@ -10,7 +10,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/scraly/gophers-api/pkg/swagger/server/restapi/operations"
+	"github.com/ibiscum/gophers-api/pkg/swagger/server/restapi/operations"
 )
 
 //go:generate swagger generate server --target ../../server --name GophersAPI --spec ../../swagger.yml --principal interface{} --exclude-main

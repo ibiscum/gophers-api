@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/scraly/gophers-api/pkg/swagger/server/models"
+	"github.com/ibiscum/gophers-api/pkg/swagger/server/models"
 )
 
 // GetGophersOKCode is the HTTP code returned for type GetGophersOK
