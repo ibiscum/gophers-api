@@ -3,7 +3,7 @@ module github.com/ibiscum/gophers-api
 go 1.18
 
 require (
-	github.com/go-openapi/errors v0.20.2
+	github.com/go-openapi/errors v0.22.0
 	github.com/go-openapi/loads v0.21.2
 	github.com/go-openapi/runtime v0.24.1
 	github.com/go-openapi/spec v0.20.6
