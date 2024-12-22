@@ -114,15 +114,15 @@ func GetGopherByName(gopherParam operations.GetGopherParams) middleware.Responde
 }
 
 // TODO: to finish
-func getGopher(gopherName string) gopher {
-	for _, myGopher := range gophers {
-		if myGopher.Name == gopherName {
-			return myGopher
-		}
-	}
+// func getGopher(gopherName string) gopher {
+// 	for _, myGopher := range gophers {
+// 		if myGopher.Name == gopherName {
+// 			return myGopher
+// 		}
+// 	}
 
-	return gopher{}
-}
+// 	return gopher{}
+// }
 
 func gopherExists(gopherName string) bool {
 	for _, myGopher := range gophers {
